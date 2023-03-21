@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="310px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginLeft="55px"
+            android:layout_marginTop="55px"
+            android:background="@drawable/image_style"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="55px"
+            android:layout_marginLeft="10px">
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Пользователь 1"
+                    android:fontFamily="@font/nunito_sans_extralight"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf = "@+id/userName"
+                    android:text="11.03.2023"
+                    android:fontFamily="@font/nunito_sans_extralight"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"
+                    android:layout_marginLeft="15px"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Я на столько в сознании преисполнился, что мне эта ваша философия абсолютна понятна"
+                    android:fontFamily="@font/nunito_sans_extralight"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/dislikeBtn"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_below="@+id/linear2"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10px"
+                android:background="@drawable/dislike" />
+            <ImageButton
+                android:id="@+id/likeBtn"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_below="@+id/linear2"
+
+                android:layout_marginTop="10px"
+                android:background="@drawable/like"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TestDesign</string>
+    <string name="header_1_1">Список вопросов</string>
+    <string name="header_1_2">для подготовки к зачету/экзамену по философии</string>
+    <string name="header_1_3">Вопрос №</string>
+    <string name="header_1_5">Обсуждение вопроса</string>
+</resources>

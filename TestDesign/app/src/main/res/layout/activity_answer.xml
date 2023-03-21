@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height= "60dp"
+        android:background="@drawable/titlebar_style">
+        <!--
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/strelka"
+            android:layout_alignLeft="@id/nameProduct"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/person"
+            android:layout_alignLeft="@id/nameProduct"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+            -->
+        <TextView
+            android:id="@+id/nameProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_extralight"
+            android:text="EDEM"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="100px" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/header_1_3"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/titlebar"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/banner_style">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nunito_sans_extralight"
+                    android:text="@string/header_1_3"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="270px"
+                android:layout_below="@+id/header_1_3"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/texst_list_style2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Культура как специфически
+                                человеческий способ бытия в мире.
+                                Культура как система. "
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/header_1_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titlebar"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/banner_style">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans_extralight"
+                    android:text="Приблизительный ответ"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans_extralight"
+                    android:text = "Предложенный разработчиками"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_1_3"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/texst_list_style2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15px"
+                    android:layout_marginBottom="15px"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginRight="15px"
+                    android:gravity="center"
+                    android:text="Жизнедеятельность человека, на какие бы виды она ни подразделялась, в конечном счёте сводится к производству либо материальных, либо духовных ценностей. В свою очередь, их совокупность, а также совокупность способов их создания, умение использовать их для дальнейшего прогресса человечества, передавать от поколения к поколению и составляют культуру. К культуре относится всё то, что противостоит натуре, то есть девственной природе, как нечто возделанное и созданное трудом человека, а это значит, что культура — это специфически человеческий способ бытия в мире.
+                        Культура – это система, обладающая своими вещными формами, своей символикой, традициями, идеалами, установками, ценностными ориентациями и, наконец, образом мысли и жизни, но она сама является одной из подсистем более сложной системы – общества. Следовательно, культура как система, существует и развивается в связи с развитием общества. В то же время общество испытывает влияние культуры как одного из образующих его элементов.
+                        Таким образом, рассмотрение культуры как системы даёт возможность понять совершающиеся в ней процессы в контексте изменений, происходящих в обществе и в составляющих его подсистемах, таких как экономика, политика и другие "
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/header_1_5"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/titlebar"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/banner_style">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nunito_sans_extralight"
+                    android:text="@string/header_1_5"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="0dp"
+                android:divider="@color/white"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+
+                <EditText
+                    android:id="@+id/editMessenge"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100px"
+                    android:hint="Введите текст комментария"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/addBtn"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginRight="100px"
+                    android:layout_marginLeft="100px"
+                    android:backgroundTint="@color/violet"
+                    android:background="@drawable/oval_btn"
+                    android:layout_toRightOf ="@+id/editMessenge"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
