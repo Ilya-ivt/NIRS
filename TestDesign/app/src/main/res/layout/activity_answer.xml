@@ -128,10 +128,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="15px"
-                    android:layout_marginBottom="15px"
                     android:layout_marginLeft="15px"
+                    android:layout_marginTop="15px"
                     android:layout_marginRight="15px"
+                    android:layout_marginBottom="15px"
                     android:gravity="center"
                     android:text="Жизнедеятельность человека, на какие бы виды она ни подразделялась, в конечном счёте сводится к производству либо материальных, либо духовных ценностей. В свою очередь, их совокупность, а также совокупность способов их создания, умение использовать их для дальнейшего прогресса человечества, передавать от поколения к поколению и составляют культуру. К культуре относится всё то, что противостоит натуре, то есть девственной природе, как нечто возделанное и созданное трудом человека, а это значит, что культура — это специфически человеческий способ бытия в мире.
                         Культура – это система, обладающая своими вещными формами, своей символикой, традициями, идеалами, установками, ценностными ориентациями и, наконец, образом мысли и жизни, но она сама является одной из подсистем более сложной системы – общества. Следовательно, культура как система, существует и развивается в связи с развитием общества. В то же время общество испытывает влияние культуры как одного из образующих его элементов.
@@ -182,13 +182,12 @@
                     android:hint="Введите текст комментария"
                     android:textSize="14sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/addBtn"
                     android:layout_width="120px"
                     android:layout_height="120px"
                     android:layout_marginRight="100px"
                     android:layout_marginLeft="100px"
-                    android:backgroundTint="@color/violet"
                     android:background="@drawable/oval_btn"
                     android:layout_toRightOf ="@+id/editMessenge"/>
             </LinearLayout>

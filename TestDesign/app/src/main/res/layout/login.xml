@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height= "60dp"
+        android:background="@drawable/titlebar_style">
+        <!--
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/strelka"
+            android:layout_alignLeft="@id/nameProduct"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/person"
+            android:layout_alignLeft="@id/nameProduct"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+            -->
+        <TextView
+            android:id="@+id/nameProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_extralight"
+            android:text="EDEM"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="100px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25px">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="390px"
+            android:layout_height="134px"
+            android:fontFamily="@font/nunito_sans_extralight"
+            android:text="Вход"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:background="@drawable/btn_log"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="390px"
+            android:layout_height="134px"
+            android:fontFamily="@font/nunito_sans_extralight"
+            android:text="Регистрация"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:background="@drawable/btn_log1" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/editLogin1"
+                android:layout_width="783px"
+                android:layout_height="114px"
+                android:background="@drawable/edit_text"
+                android:hint="Логин"
+                android:textColorHint="#808080"
+                android:paddingLeft="36px"/>
+
+            <EditText
+                android:id="@+id/editPas2"
+                android:layout_width="783px"
+                android:layout_height="114px"
+                android:background="@drawable/edit_text"
+                android:hint="Пароль"
+                android:textColorHint="#808080"
+                android:paddingLeft="36px"
+                android:layout_below = "@id/editLogin1"
+                android:layout_marginTop="25px"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="590px"
+                android:layout_height="114px"
+                android:layout_below="@+id/editPas2"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="25px"
+                android:background="@drawable/btn_reg2"
+                android:fontFamily="@font/nunito_sans_extralight"
+                android:text="Войти"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+</LinearLayout>

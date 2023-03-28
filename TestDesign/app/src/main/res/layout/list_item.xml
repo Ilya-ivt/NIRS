@@ -38,15 +38,16 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="15px"
                     android:layout_marginBottom="15px">
+
                     <TextView
                         android:id="@+id/question"
                         android:layout_width="match_parent"
                         android:layout_height="240px"
-                        android:background="@color/silver"
-                        android:layout_marginTop="15px"
-                        android:layout_marginBottom="15px"
                         android:layout_marginLeft="15px"
+                        android:layout_marginTop="15px"
                         android:layout_marginRight="15px"
+                        android:layout_marginBottom="15px"
+                        android:background="@color/silver"
                         android:fontFamily="@font/droid_sans_mono"
                         android:gravity="center_vertical"
                         android:paddingLeft="40px"
@@ -55,7 +56,7 @@
                         Культура как система. "
                         android:textColor="@color/black"
                         android:textSize="14sp"
-                        android:textStyle="italic"/>
+                        android:textStyle="italic" />
                 </RelativeLayout>
             </LinearLayout>
         </RelativeLayout>

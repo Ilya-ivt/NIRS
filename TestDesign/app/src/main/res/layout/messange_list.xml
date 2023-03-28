@@ -5,7 +5,7 @@
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="310px"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <ImageView
@@ -14,75 +14,102 @@
             android:layout_marginLeft="55px"
             android:layout_marginTop="55px"
             android:background="@drawable/image_style"/>
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="55px"
-            android:layout_marginLeft="10px">
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/linear1"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:layout_marginTop="55px"
+                android:layout_marginLeft="10px">
 
-                <TextView
-                    android:id="@+id/userName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Пользователь 1"
-                    android:fontFamily="@font/nunito_sans_extralight"
-                    android:textSize="15sp"
-                    android:textColor="@color/black"/>
-                <TextView
-                    android:id="@+id/date"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf = "@+id/userName"
-                    android:text="11.03.2023"
-                    android:fontFamily="@font/nunito_sans_extralight"
-                    android:textSize="12sp"
-                    android:textColor="@color/gray"
-                    android:layout_marginLeft="15px"/>
-            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/linear2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/linear1">
-                <TextView
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_extralight"
+                        android:text="Пользователь 1"
+                        android:textColor="@color/violet"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="11.03.2023"
+                        android:fontFamily="@font/nunito_sans_extralight"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray"
+                        android:gravity="right"
+                        android:layout_marginRight="80px"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Я на столько в сознании преисполнился, что мне эта ваша философия абсолютна понятна"
-                    android:fontFamily="@font/nunito_sans_extralight"
-                    android:textSize="15sp"
-                    android:textColor="@color/black"/>
-            </LinearLayout>
+                    android:layout_below="@+id/linear1">
 
-            <ImageButton
-                android:id="@+id/dislikeBtn"
-                android:layout_width="100px"
-                android:layout_height="100px"
-                android:layout_below="@+id/linear2"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="10px"
-                android:background="@drawable/dislike" />
-            <ImageButton
-                android:id="@+id/likeBtn"
-                android:layout_width="100px"
-                android:layout_height="100px"
-                android:layout_below="@+id/linear2"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/nunito_sans_extralight"
+                        android:text="Я на столько в сознании преисполнился, что мне эта ваша философия абсолютна понятна"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
 
-                android:layout_marginTop="10px"
-                android:background="@drawable/like"
-                />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10px"
+                    android:layout_marginRight="80px">
 
+                    <ImageButton
+                        android:id="@+id/dislikeBtn"
+                        android:layout_width="80px"
+                        android:layout_height="80px"
+                        android:layout_below="@+id/linear2"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10px"
+                        android:background="@drawable/like" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/nunito_sans_extralight"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:text="0"
+                        android:gravity="bottom"/>
 
-        </RelativeLayout>
+                    <ImageButton
+                        android:id="@+id/likeBtn"
+                        android:layout_width= "80px"
+                        android:layout_height="80px"
+                        android:layout_below="@+id/linear2"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginTop="10px"
+                        android:background="@drawable/dislike" />
 
-
-
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/nunito_sans_extralight"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:text="0"
+                        android:gravity="bottom"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
     </LinearLayout>
-
 </LinearLayout>

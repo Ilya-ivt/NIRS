@@ -4,4 +4,6 @@
     <string name="header_1_2">для подготовки к зачету/экзамену по философии</string>
     <string name="header_1_3">Вопрос №</string>
     <string name="header_1_5">Обсуждение вопроса</string>
+    <string name="avatar">Добавить фотографию</string>
+    <string name="anonim">Продолжить анонимно</string>
 </resources>

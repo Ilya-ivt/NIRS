@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height= "60dp"
+        android:background="@drawable/titlebar_style">
+        <!--
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/strelka"
+            android:layout_alignLeft="@id/nameProduct"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/person"
+            android:layout_alignLeft="@id/nameProduct"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+            -->
+        <TextView
+            android:id="@+id/nameProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_extralight"
+            android:text="EDEM"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="100px" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25px">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="390px"
+            android:layout_height="134px"
+            android:fontFamily="@font/nunito_sans_extralight"
+            android:text="Вход"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:background="@drawable/btn_reg1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="390px"
+            android:layout_height="134px"
+            android:fontFamily="@font/nunito_sans_extralight"
+            android:text="Регистрация"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:background="@drawable/btn_reg" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_gravity="center"
+        android:layout_marginTop="100px"
+        android:background="@drawable/image_style" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100px">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        
+        <EditText
+            android:id="@+id/editLogin"
+            android:layout_width="783px"
+            android:layout_height="114px"
+            android:background="@drawable/edit_text"
+            android:hint="Логин"
+            android:textColorHint="#808080"
+            android:paddingLeft="36px"/>
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="783px"
+            android:layout_height="114px"
+            android:background="@drawable/edit_text"
+            android:hint="Email"
+            android:textColorHint="#808080"
+            android:paddingLeft="36px"
+            android:layout_below = "@id/editLogin"
+            android:layout_marginTop="25px"/>
+
+        <EditText
+            android:id="@+id/editPas"
+            android:layout_width="783px"
+            android:layout_height="114px"
+            android:background="@drawable/edit_text"
+            android:hint="Пароль"
+            android:textColorHint="#808080"
+            android:paddingLeft="36px"
+            android:layout_below = "@id/editEmail"
+            android:layout_marginTop="25px"/>
+
+        <EditText
+            android:id="@+id/editPas1"
+            android:layout_width="783px"
+            android:layout_height="114px"
+            android:background="@drawable/edit_text"
+            android:hint="Повтор пароля"
+            android:textColorHint="#808080"
+            android:paddingLeft="36px"
+            android:layout_below = "@id/editPas"
+            android:layout_marginTop="25px"/>
+
+            <TextView
+                android:id="@+id/avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below = "@id/editPas1"
+                android:text="@string/avatar"
+                android:layout_marginLeft="36px"
+                android:textColor="@color/violet"
+                android:clickable="true"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/registerBtn"
+                android:layout_width="590px"
+                android:layout_height="114px"
+                android:layout_below="@id/avatar"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="25px"
+                android:background="@drawable/btn_reg2"
+                android:fontFamily="@font/nunito_sans_extralight"
+                android:text="Зарегистрироваться"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/anon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerBtn"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:text="@string/anonim"
+                android:textColor="@color/silver" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
