@@ -101,18 +101,18 @@
             android:layout_below = "@id/editLogin"
             android:layout_marginTop="25px"/>
 
-        <EditText
-            android:id="@+id/editPas"
-            android:layout_width="783px"
-            android:layout_height="114px"
-            android:background="@drawable/edit_text"
-            android:hint="Пароль"
-            android:textColorHint="#808080"
-            android:paddingLeft="36px"
-            android:layout_below = "@id/editEmail"
-            android:layout_marginTop="25px"/>
+            <EditText
+                android:id="@+id/editPas"
+                android:layout_width="783px"
+                android:layout_height="114px"
+                android:layout_below="@id/editEmail"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edit_text"
+                android:hint="Пароль"
+                android:paddingLeft="36px"
+                android:textColorHint="#808080" />
 
-        <EditText
+            <EditText
             android:id="@+id/editPas1"
             android:layout_width="783px"
             android:layout_height="114px"

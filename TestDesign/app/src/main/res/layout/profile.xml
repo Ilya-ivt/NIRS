@@ -53,7 +53,173 @@
         android:text="Admin"
         android:textColor="@color/black"
         android:gravity="center"
-        android:layout_marginTop=""/>
+        android:layout_marginTop="30px"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="100px">
+        
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:background="@drawable/like"
+            android:layout_marginRight="75px"/>
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:background="@drawable/chat"
+            />
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:background="@drawable/dislike"
+            android:layout_marginLeft="75px"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:text="100"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginRight="75px"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:text="55"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:text="7"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="75px"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/banner_style2"
+        android:layout_marginTop="80px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ваши данные"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="30px">
+
+        <LinearLayout
+            android:layout_width="783px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:text="Email:"
+                android:textColor="@color/gray"
+                android:paddingLeft="30px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Google@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginLeft="15px" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="783px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:text="Дата регистрации:"
+                android:textColor="@color/gray"
+                android:paddingLeft="30px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="11.02.23"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginLeft="15px" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="783px"
+            android:layout_height="match_parent"
+            android:text="Логин"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:paddingLeft="30px"
+            android:layout_marginTop="30px"/>
+
+        <EditText
+            android:layout_width="783px"
+            android:layout_height="100px"
+            android:background="@drawable/edit_text"
+            android:text="Admin"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:paddingLeft="30px" />
+
+        <TextView
+            android:layout_width="783px"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:text="Пароль"
+            android:textColor="@color/gray"
+            android:layout_marginTop="30px"
+            android:paddingLeft="30px"/>
+        <EditText
+            android:layout_width="783px"
+            android:layout_height="100px"
+            android:background="@drawable/edit_text"
+            android:text="Password"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:paddingLeft="30px"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Добавить изменения"
+            android:textColor="@color/violet"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="30px"
+            android:clickable="true"/>
+    </LinearLayout>
+
 
 
 
